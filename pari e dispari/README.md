@@ -22,7 +22,7 @@ Stampo l'esito del controllo finale
 
 ## FUNZIONI
 #### FUNZIONE PER GENERARE UN NUMERO CASUALE TRA 1 E 5
-function rndNumeberPc() {  
+function rndNumberPc() {  
 
     funzione math.random compresa tra uno e 5;  
     ritorno il numero casuale;
