@@ -8,7 +8,7 @@ const computerNumber = parseInt(rndNumberPc(1, 5));
 
 // CHIEDO E CONFERMA DI UN NUMERO COMPRESO TRA 1 E 5
 
-do {    
+do {
     userNumber = parseInt(prompt("inserisci un numero tra 1 e 5!"));
 
 } while (isNaN(userNumber) || (userNumber < 1 || userNumber > 5));
@@ -18,9 +18,9 @@ console.log(userNumber);
 // CHIEDO E CONFERMA TRA PARI O DISPARI
 do {
 
-userChoice = prompt("Scegli pari o dispari!");
+    userChoice = prompt("Scegli pari o dispari!");
 
-} while(userChoice != "pari" && userChoice != "dispari");
+} while (userChoice != "pari" && userChoice != "dispari");
 
 console.log(userChoice);
 
@@ -35,7 +35,7 @@ console.log(result);
 
 let finalResult = "";
 if (result === userChoice) {
-    finalResult =" Congratulazioni hai vinto!!!";
+    finalResult = " Congratulazioni hai vinto!!!";
 } else {
     finalResult = "Mi spiace hai perso";
 }
@@ -52,7 +52,7 @@ document.getElementById("final-result").innerHTML = finalResult;
 
 /////////////////////////// FUNZIONI /////////////////////////
 // funzione che genera numero casuale
-function rndNumberPc (min, max) {
+function rndNumberPc(min, max) {
     const rndNumber = Math.floor(Math.random() * (max - min)) + min;
     return rndNumber;
 }
@@ -60,10 +60,10 @@ function rndNumberPc (min, max) {
 // funzione che restituisce pari o dispari in base al numero
 function oddEven(sumNumber) {
     let functionResult = "";
-    if(sumNumber % 2 === 0) {
-        functionResult ="pari";
+    if (sumNumber % 2 === 0) {
+        functionResult = "pari";
     } else {
-        functionResult ="dispari";
+        functionResult = "dispari";
     }
 
     return functionResult;
